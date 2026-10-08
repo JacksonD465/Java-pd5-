@@ -4,7 +4,15 @@ class Main {
   }
 
   void init(){
+    System.out.println(groupSavings(5));
+    System.out.println(groupSavings(16));
+    System.out.println(groupSavings(20));
+    System.out.println(groupSavings(0));
 
+    System.out.println(groceryDiscount(150,4));
+    System.out.println(groceryDiscount(150,2));
+    System.out.println(groceryDiscount(250,5));
+    System.out.println(groceryDiscount(250,4));
         
   }
 
@@ -17,7 +25,7 @@ class Main {
       over 16 tickts  : each ticket cost $8.50
     */
    double groupSavings(int NumOfTickets){
-    if(NumOfTickets >= 1 && <=8){
+    if(NumOfTickets >= 1 && NumOfTickets<=8){
       return (NumOfTickets * 11);
     }
      else if (NumOfTickets >= 9 && NumOfTickets <= 16) {
@@ -42,18 +50,15 @@ class Main {
         Otherwise: $0 savings.
     */
    double groceryDiscount(double totalspent, double CanBeans ){
-    if(totalspent >= 100 && <=200 && CanBeans >= 3){
+    if(totalspent >= 100 && totalspent <=200 && CanBeans >= 3)
       return 10;
-    } 
-    else if (total > 200 && beans > 4) {
+    else if(totalspent > 200 && CanBeans > 4) 
         return 25;
-    }
-    else {
-        return 0;
+    else
+      return 0;
     }
 }
     
    
 
 
-}
