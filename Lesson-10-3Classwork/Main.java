@@ -25,15 +25,14 @@ class Main {
       over 16 tickts  : each ticket cost $8.50
     */
    double groupSavings(int NumOfTickets){
-    if(NumOfTickets >= 1 && NumOfTickets<=8){
+    if(NumOfTickets >= 1 && NumOfTickets<=8)
       return (NumOfTickets * 11);
-    }
-     else if (NumOfTickets >= 9 && NumOfTickets <= 16) {
+    
+     else if (NumOfTickets >= 9 && NumOfTickets <= 16) 
         return NumOfTickets * 10.50;
-    } 
-    else {
+    
+    else 
         return NumOfTickets * 8.50;
-    }
 
    }
   
